@@ -84,15 +84,6 @@ eslint:
 
 install: install-scripts install-doc install-examples install-man
 
-build-scripts:
-
-	git \
-	  submodule \
-	    update \
-	    --init \
-	      "$(_PROJECT_NPM)/nodejs" || \
-	true
-
 install-scripts:
 
 	$(_INSTALL_DIR) \

@@ -17,21 +17,22 @@
     "COPYING",
     "README.md",
     "lib",
-    "libevm-wallet",
-    "evm-wallet",
-    "evm-wallet.js",
+    "libevm-contracts-tools",
+    "evm-contract-call",
+    "evm-contract-call.js",
+    "evm-contract-call.webpack.config.js",
     "fs-worker.js",
     "fs-worker.webpack.config.js",
     "index.html",
     "package.json",
-    "serve.json",
-    "webpack.config.js"
+    "serve.json"
   ],
   "keywords": [
     "ur",
     "themartiancompany",
     "dogeos",
-    "ethereum"
+    "ethereum",
+    "evmfs"
   ],
   "homepage":
     "https://github.com/themartiancompany/evm-contracts-tools",
@@ -43,7 +44,7 @@
     "type":
       "git",
     "url":
-      "git+https://github.com/themartiancompany/evm-contracts-tools.git"
+      "git+https://github.com/themartiancompany/evm-contracts-tools.js.git"
   },
   "license":
     "AGPL-3.0-or-later",
@@ -92,7 +93,10 @@
   "main":
     "libevm-contracts-tools",
   "bin":
-    { "evm-contract-call-dynamic.js":
+    { 
+      "evm-contract-call.js":
+        "evm-contract-call",
+      "evm-contract-call-dynamic.js":
         "lib/evm-contract-call-dynamic",
       "evm-contract-call-static.js":
         "lib/evm-contract-call-static" },
@@ -100,7 +104,7 @@
     "build-fs-worker":
       "npx webpack --mode 'production' --config 'fs-worker.webpack.config.cjs' --stats-error-details",
     "build-lib":
-      "npx webpack --mode 'production' --config 'webpack.config.cjs' --stats-error-details",
+      "npx webpack --mode 'production' --config 'libevm-contracts-tools.webpack.config.cjs' --stats-error-details",
     "build":
       "npm run lint && npm run build-fs-worker && npm run build-lib",
     "lint":

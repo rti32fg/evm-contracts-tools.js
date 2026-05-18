@@ -178,9 +178,7 @@ async function
 function
   _config_show() {
   let
-    _line,
-    _method_args,
-    _text;
+    _line;
   const
     _text = [
     "deployer-get configuration:",

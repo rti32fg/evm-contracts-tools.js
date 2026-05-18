@@ -83,6 +83,8 @@
       "^6.13.2",
     "evm-chains-info":
       "^0.0.18",
+    "evm-transactions-tools":
+      "^0.0.6",
     "evm-wallet.js":
       "^0.0.26",
     "libevm":

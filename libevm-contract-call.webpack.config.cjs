@@ -100,18 +100,22 @@ module.exports = {
         _path.resolve(
           __dirname,
           'node_modules/fs/fs'),
-      "libevm-contracts-tools":
+      "evm-contracts-tools":
         _path.resolve(
           __dirname,
-          './libevm-contract-tools'),
-      "libevm":
+          "libevm-contract-tools"),
+      "evm-transactions-tools":
         _path.resolve(
           __dirname,
-          'node_modules/libevm/libevm'),
+          "node_modules/evm-transactions-tools/libevm-transactions-tools"),
       "evm-wallet.js":
         _path.resolve(
           __dirname,
           'node_modules/evm-wallet.js/libevm-wallet'),
+      "libevm":
+        _path.resolve(
+          __dirname,
+          'node_modules/libevm/libevm'),
       "path":
         _path.resolve(
           __dirname,

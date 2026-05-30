@@ -30,21 +30,26 @@ const
   _libcrash =
     require(
       "crash-js");
+/* global
+     _argv_get */
+const
+  _argv_get =
+    _libcrash._argv_get;
+/* global
+     _cmdline_check */
 const
   _cmdline_check =
     _libcrash._cmdline_check;
-const
-  _error_display =
-    _libcrash._error_display;
+/* global
+     _msg_info */
 const
   _msg_info =
     _libcrash._msg_info;
+/* global
+     _msg_error */
 const
   _msg_error =
     _libcrash._msg_error;
-const
-  _printf =
-    _libcrash._printf;
 const
   { ethers } =
     require(
@@ -52,29 +57,11 @@ const
 const
   _ethers =
     ethers;
+/* global
+     _address_check */
 const
   _address_check =
     _ethers.isAddress;
-const
-  _wei_to_ether =
-    _ethers.formatEther;
-const
-  _evm_transactions_tools_module =
-    require(
-      "evm-transactions-tools");
-const
-  _transaction_get =
-    _evm_transactions_tools_module._transaction_get;
-const
-  _transaction_receipt_get =
-    _evm_transactions_tools_module._transaction_receipt_get;
-const
-  _deployer_get_module =
-    require(
-      './deployer-get');
-const
-  _deployer_get =
-    _deployer_get_module._deployer_get;
 
 function
   _global_variables() {

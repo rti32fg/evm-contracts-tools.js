@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 
-
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 /**    ----------------------------------------------------------------
- *     libevm-contracts-tools
+ *     evm-contracts-tools
  *     ----------------------------------------------------------------
  *     Copyright ©
  *       Pellegrino Prevete
@@ -115,25 +114,13 @@ const
   _contract_call_static =
     _evm_contract_call_static_module._contract_call_static;
 
-
-
-
-function
-  _artifact_local_auto_detect() {
-  true;
-}
-
 module.exports = {
   _address_check:
     _address_check,
-  _artifact_local_auto_detect:
-    _artifact_local_auto_detect,
   _bytecode_creation_get:
     _bytecode_creation_get,
   _bytecode_runtime_get:
     _bytecode_runtime_get,
-  _call_auth_auto_detect:
-    _call_auth_auto_detect,
   _contract_call_dynamic:
     _contract_call_dynamic,
   _contract_call_static:

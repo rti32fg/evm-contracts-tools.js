@@ -429,12 +429,10 @@ async function
   const
     _argv_args = {
       "booleans": [
-        "a",
-        "auth",
+        "u",
+        "user-level",
         "h",
         "help",
-        "I",
-        "index-retrieve",
         "v",
         "verbose"
       ]
@@ -451,11 +449,13 @@ async function
     "y";
   runtime_environment =
     "node";
-  if ( _argv["h"] ) {
+  if ( _argv[
+         "h"] ) {
     _help_display =
       true;
   }
-  if ( _argv["help"] ) {
+  if ( _argv[
+         "help"] ) {
     _help_display =
       true;
   }
@@ -479,14 +479,15 @@ async function
        _argv[
          "_"].length < 1 ) {
     _msg =
-      "Contract address argument required.";
+      "Target application " +
+      "argument required.";
     _msg_error(
       _msg,
       0);
     _usage(
       1);
   }
-  contract_address =
+  target_app =
     _argv[
       "_"][
         0];
